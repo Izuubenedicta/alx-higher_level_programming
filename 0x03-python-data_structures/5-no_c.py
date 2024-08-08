@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 def no_c(my_string):
-    new_string = ""
-    for elements in my_string:
-        if elements != "c" and elements != "C":
-            new_string += elements
-    return new_string
-
+    """
+    Remove all characters c and C from a string
+    """
+    result = [x for x in my_string if x != 'c' and x != 'C']
+    return ("".join(result))
